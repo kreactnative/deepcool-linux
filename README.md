@@ -9,6 +9,7 @@ sudo apt install libhidapi-hidraw0
 ```
 cd /opt/
 git clone https://github.com/kreactnative/deepcool-linux
+cd deepcool-linux
 pip install hidapi --break-system-packages
 ./setup.sh
 ```
