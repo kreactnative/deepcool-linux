@@ -5,7 +5,7 @@ import psutil
 
 # Default values for Vendor ID and Product ID
 DEFAULT_VENDOR_ID = 0x3633  # DeepCool's Vendor ID
-DEFAULT_PRODUCT_ID = 0x0006  # AK620's Product ID
+DEFAULT_PRODUCT_ID = 0x0006  # ls720's Product ID
 INTERVAL = 2
 
 # Check for command-line arguments and assign them if provided
@@ -79,7 +79,7 @@ try:
         time.sleep(INTERVAL)
 except IOError as ex:
     print(ex)
-    print("Ensure that the AK620 is connected and the script has the correct Vendor ID and Product ID.")
+    print("Ensure that the ls720 is connected and the script has the correct Vendor ID and Product ID.")
     print("Update the VENDOR_ID and PRODUCT_ID variables in this script or pass them as command-line arguments.")
 except KeyboardInterrupt:
     print("Script terminated by user.")
