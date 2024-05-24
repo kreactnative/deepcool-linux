@@ -11,6 +11,6 @@ cd /opt/
 git clone https://github.com/kreactnative/deepcool-linux
 cd deepcool-linux
 pip install hidapi --break-system-packages
-pip install pstil --break-system-packages
+pip install psutil --break-system-packages
 ./setup.sh
 ```
