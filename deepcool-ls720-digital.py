@@ -24,7 +24,8 @@ DEVICES = {
     "AK620": DeviceInfo(vendor_id=0x3633, product_id=0x0002, simple_mode=False),
     "AK400": DeviceInfo(vendor_id=0x3633, product_id=0x0001, simple_mode=False),
     "AG400": DeviceInfo(vendor_id=0x3633, product_id=0x0008, simple_mode=False),
-    "CUSTOM": DeviceInfo(vendor_id=0x0, product_id=0x0000, simple_mode=False)
+    "CUSTOM": DeviceInfo(vendor_id=0x0, product_id=0x0000, simple_mode=False),
+    "LS-SE-DIGITAL":  DeviceInfo(vendor_id=0x3633, product_id=0x0006, simple_mode=False)
 }
 
 parser = argparse.ArgumentParser(
