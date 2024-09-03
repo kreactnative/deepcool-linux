@@ -177,7 +177,7 @@ def get_usage(is_test: bool = False):
 
 try:
     hidDevice = hid.device()
-    hidDevice.open(DEVICES[CUR_DEVICE].VENDOR_ID, DEVICES[CUR_DEVICE].PRODUCT_ID)
+    hidDevice.open("0x3633", "0x0006")
     hidDevice.set_nonblocking(1)
     if not DEVICES[CUR_DEVICE].SIMPLE_MODE:
         hidDevice.write(get_data_complex(mode="start"))
